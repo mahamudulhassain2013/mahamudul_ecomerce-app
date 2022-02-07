@@ -1,8 +1,9 @@
 
 
 import 'package:flutter/material.dart';
-import 'carrosel_slider.dart';
 import 'homepage.dart';
+import 'product_category.dart';
+import 'tabbar.dart';
 
 void main() =>runApp(MyApp());
 
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: "Ecomerce demo App",
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      home: TabBarClass(),
     );
   }
 }
