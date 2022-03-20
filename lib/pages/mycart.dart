@@ -1,5 +1,6 @@
-
 import 'package:flutter/material.dart';
+import 'package:mahamudul_ecomerce_app/widgets/appbarDecoration.dart';
+
 class MyCart extends StatefulWidget {
   const MyCart({Key? key}) : super(key: key);
 
@@ -11,10 +12,7 @@ class _MyCartState extends State<MyCart> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-     appBar: AppBar(
-       title: Text("My Cart"),
-       centerTitle: true,
-     ),
+      appBar: appbarDecoration("My Cart"),
       body: ListView(
         children: [
           ListTile(
@@ -83,10 +81,7 @@ class _MyCartState extends State<MyCart> {
             subtitle: Text("Product Prize"),
             trailing: Icon(Icons.delete_forever_sharp),
           ),
-
-
         ],
-
       ),
     );
   }
